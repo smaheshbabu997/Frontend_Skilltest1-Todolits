@@ -34,12 +34,6 @@ function handler(e) {
     return;
   }
 
-  else if (target.className === 'check') {
-    const taskId = target.id;
-    markDone(taskId);
-    return;
-  }
-
   else if (target.className === 'incomplete') {
     if (toDoList.length == 0) {
       return;
